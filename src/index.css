@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.home {
+  padding: 15px 30px 15px 15px;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh + 100px);
+}
+
+.ellips1 {
+  width: 63px;
+  height: 63px;
+  background-color: rgba(50, 150, 212, 0.1);
+  opacity: 0.5;
+  border-radius: 50%;
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  z-index: -1;
+}
+.ellips2 {
+  width: 1102px;
+  height: 1102px;
+  border-radius: 1102px;
+  border: 51px solid var(--third, #3296d4);
+  opacity: 0.05;
+  position: absolute;
+  right: -400px;
+  top: 20px;
+  z-index: -1;
+}
+.ellips3 {
+  width: 850px;
+  height: 850px;
+  border-radius: 850px;
+  border: 51px solid var(--third, #3296d4);
+  opacity: 0.05;
+  position: absolute;
+  right: -60%;
+  top: 250px;
+  z-index: -1;
+}
+.landing {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  animation: riseUp 1.5s ease-out forwards;
+  transform: translateY(100%);
+}
+@keyframes riseUp {
+  0% {
+    transform: translateY(100%);
+  }
+  30% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.text {
+  width: 60%;
+  margin-top: 50px;
+}
+.text h1 {
+  font-size: 64px;
+  font-weight: 700;
+}
+.text h1 span {
+  color: #3296d4;
+  font-size: 64px;
+}
+.text span {
+  color: var(--gray, #747688);
+  text-align: justify;
+  font-size: 24px;
+  font-weight: 500;
+}
+.images {
+  width: 30%;
+  display: flex;
+  gap: 20px;
+}
+.images img {
+  margin: 5px 0;
+}
+.button {
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  background-color: #3296d4;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 150px;
+  left: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover i {
+  animation: move 0.5s infinite;
+}
+@keyframes move {
+  0%,
+  100% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+/* /////////////////////////////////////////////////// */
+.container-fluid {
+  padding: 0;
+}
+.social-media {
+  width: 100%;
+  background-color: #f8f7f7;
+  display: flex;
+  padding: 20px 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-media img {
+  margin: 5px 15px;
+}
+
+/* ///////////////////////////////////////////////////// */
+
+.period {
+  background: rgba(50, 150, 212, 0.1);
+  padding: 30px;
+  position: relative;
+}
+.period .shape {
+  position: absolute;
+  top: 50px;
+  right: 120px;
+}
+.period h2 {
+  color: #565656;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.period .content .nums,
+.period .content .text {
+  display: flex;
+  justify-content: space-between;
+  text-align: right;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  font-size: 45px;
+  color: #3296d4;
+}
+.period .content .text {
+  width: 71%;
+}
+.period .content h4 {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 45px;
+  margin: 0;
+}
+.period .content p {
+  margin-top: 5px;
+  margin-left: 15px;
+  color: #565656;
+  font-size: 25px;
+}
+
+/* //////////////////////////////////////////// */
+
+.about {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.about .shape {
+  position: absolute;
+  top: -50px;
+  right: 100px;
+}
+.about h2 {
+  font-size: 45px;
+  position: relative;
+}
+.about h2::before {
+  content: "";
+  width: 120px;
+  height: 3px;
+  background-color: #3296d4;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about span {
+  color: #565656;
+  display: block;
+  width: 80%;
+  margin: 20px auto;
+  font-size: 24px;
+}
