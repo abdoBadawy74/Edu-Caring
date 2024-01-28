@@ -77,7 +77,7 @@ export default function About() {
           className="vector"
           xmlns="http://www.w3.org/2000/svg"
           width="514"
-          height="970"
+          height="700"
           viewBox="0 0 514 970"
           fill="none"
         >
