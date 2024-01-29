@@ -4,6 +4,7 @@ import NavBar from "./LandingPage/NavBar";
 import Period from "./LandingPage/Period";
 import Social from "./LandingPage/Social";
 import Photos from './LandingPage/Photos';
+import Contacts from "./LandingPage/Contacts";
 
 export default function LandingPage() {
   return (
@@ -14,6 +15,7 @@ export default function LandingPage() {
       <Period></Period>
       <About></About>
       <Photos></Photos>
+      <Contacts></Contacts>
     </>
   );
 }

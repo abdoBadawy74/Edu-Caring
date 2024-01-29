@@ -61,24 +61,8 @@ a {
   animation: riseUp 1.5s ease-out forwards;
   transform: translateY(100%);
 }
-@keyframes riseUp {
-  0% {
-    transform: translateY(100%);
-  }
-  30% {
-    transform: translateY(30%);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  70% {
-    transform: translateY(5%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.text {
+
+.landing .text {
   width: 60%;
   margin-top: 10%;
 }
@@ -285,6 +269,99 @@ a {
   letter-spacing: 0.5px;
 }
 
+/* //////////////////////////////////////////////////// */
+
+.contact {
+  background-color: #3296d4;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+.contact .rectangle {
+  width: 300px;
+  position: absolute;
+  top: -15px;
+}
+.contact .text {
+  padding: 50px 30px 50px 50px;
+  position: relative;
+}
+.contact .text h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.contact .form {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  position: relative;
+  padding: 5px 10px;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+.contact input {
+  flex: 1;
+  outline: none;
+  border: none;
+}
+
+.contact input::placeholder {
+  color: var(--Dark-25, rgba(8, 8, 8, 0.25));
+}
+.contact .text button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: #3296d4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.contact .shapes {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px 0 0 0;
+  background: #f2f2f2;
+  position: absolute;
+  right: 50px;
+  top: 50px;
+}
+.contact .shapes .quarter {
+  width: 50px;
+  height: 50px;
+  border-radius: 200px 0 0 0;
+  background: #fff;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.contact .shapes .half {
+  width: 50px;
+  height: 100px;
+  border-radius: 100px 0 0 100px;
+  border: 2px solid #dcdcdc;
+  position: absolute;
+  bottom: -72px;
+  left: 53%;
+  transform: translateX(-50%);
+}
+.contact .three-quarter {
+  position: absolute;
+  bottom: -120px;
+  left: 4%;
+}
+
+/* --------------- key frames ------------------*/
 @keyframes move {
   0%,
   100% {
@@ -292,5 +369,23 @@ a {
   }
   50% {
     transform: translateX(0);
+  }
+}
+
+@keyframes riseUp {
+  0% {
+    transform: translateY(100%);
+  }
+  30% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(5%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
