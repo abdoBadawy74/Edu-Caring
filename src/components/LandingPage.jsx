@@ -6,6 +6,8 @@ import Social from "./LandingPage/Social";
 import Photos from "./LandingPage/Photos";
 import Contacts from "./LandingPage/Contacts";
 import Speakers from "./LandingPage/Speakers";
+import Register from "./LandingPage/Register";
+import Footer from "./LandingPage/Footer";
 
 export default function LandingPage() {
   return (
@@ -18,6 +20,8 @@ export default function LandingPage() {
       <Photos></Photos>
       <Contacts></Contacts>
       <Speakers></Speakers>
-    </>
+      <Register></Register>
+      <Footer></Footer>
+      </>
   );
 }
