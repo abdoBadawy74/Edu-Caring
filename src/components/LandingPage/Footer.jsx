@@ -48,8 +48,8 @@ export default function Footer() {
               <input type="text" placeholder="mail"></input>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="18"
-                height="19"
+                width="15"
+                height="15"
                 viewBox="0 0 18 19"
                 fill="none"
               >
