@@ -15,6 +15,9 @@ ul{
 a {
   text-decoration: none;
 }
+i{
+  font-weight: 900;
+}
 
 .home {
   padding: 15px 30px 15px 15px;
