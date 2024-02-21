@@ -11,7 +11,7 @@ export default function Verfication() {
           <h4>Verification</h4>
           <p>
             We’ve send you the verification code on{" "}
-            <span className={style.num}> +966 2151515155</span>
+            <p className={style.num}> +966 2151515155</p>
           </p>
           <div className={style.form}>
             <input type="number" />
