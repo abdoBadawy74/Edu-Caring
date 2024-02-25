@@ -7,11 +7,11 @@ import Verfication from "./components/Website/verfiy-number/Verfication.jsx";
 function App() {
   return (
     <>
-      {/* <LandingPage></LandingPage> */}
+      <LandingPage></LandingPage>
       {/* <Login></Login> */}
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
-      <Verfication></Verfication>
+      {/* <Verfication></Verfication> */}
     </>
   );
 }

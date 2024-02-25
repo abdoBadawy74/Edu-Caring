@@ -9,13 +9,13 @@ body {
   font-family: "Cairo", sans-serif;
   overflow-x: hidden;
 }
-ul{
+ul {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-i{
+i {
   font-weight: 900;
 }
 
@@ -26,7 +26,16 @@ i{
   overflow: hidden;
   height: calc(100vh + 100px);
 }
-
+@media (max-width: 1100px) {
+  .home {
+    height: calc(100vh + 360px);
+  }
+}
+@media (max-width: 920px) {
+  .home {
+    height: 100vh;
+  }
+}
 .ellips1 {
   width: 63px;
   height: 63px;
@@ -67,10 +76,34 @@ i{
   animation: riseUp 1.5s ease-out forwards;
   transform: translateY(100%);
 }
+@media (max-width: 1200px) {
+  .landing {
+    gap: 10px;
+  }
+}
+@media (max-width: 1100px) {
+  .landing {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
 
 .landing .text {
   width: 60%;
   margin-top: 10%;
+}
+@media (max-width: 1100px) {
+  .landing .text {
+    margin-top: 0;
+    width: 40%;
+  }
+}
+@media (max-width: 920px) {
+  .landing .text {
+    margin-top: 0;
+    width: 90%;
+  }
 }
 .text h1 {
   font-size: 64px;
@@ -91,6 +124,16 @@ i{
   display: flex;
   gap: 20px;
 }
+@media (max-width: 1100px) {
+  .landing .images {
+    width: 40%;
+  }
+}
+@media (max-width: 920px) {
+  .landing .images {
+    display: none;
+  }
+}
 .images img {
   margin: 5px 0;
 }
@@ -108,7 +151,21 @@ i{
   cursor: pointer;
   transition: 0.3s;
 }
-
+@media (max-width: 1100px) {
+  .button {
+    bottom: 0;
+    left: auto;
+    right: 15px;
+  }
+}
+@media (max-width: 920px) {
+  .button {
+    bottom: -100px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
 .button:hover i {
   animation: move 0.5s infinite;
 }
@@ -128,6 +185,14 @@ i{
 }
 .social-media img {
   margin: 5px 15px;
+}
+@media (max-width: 920px) {
+  .social-media {
+    flex-direction: column;
+  }
+  .social-media img {
+    margin: 10px 15px;
+  }
 }
 
 /* ///////////////////////////////////////////////////// */
@@ -160,6 +225,12 @@ i{
   font-size: 45px;
   color: #3296d4;
 }
+@media (max-width: 767px) {
+  .period .content .nums,
+  .period .content .text {
+    width: 100%;
+  }
+}
 .period .content .text {
   width: 71%;
 }
@@ -169,6 +240,11 @@ i{
   border-radius: 5px;
   font-size: 45px;
   margin: 0;
+}
+@media (max-width: 767px) {
+  .period .content h4 {
+    margin: 0 10px;
+  }
 }
 .period .content p {
   margin-top: 5px;
@@ -226,6 +302,15 @@ i{
   gap: 80px;
   position: relative;
 }
+@media (max-width: 1024px) {
+  .photos {
+    margin: auto;
+    width: 70%;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
 .photos .shape {
   position: absolute;
   top: 50px;
@@ -235,7 +320,6 @@ i{
   display: flex;
   gap: 2px;
 }
-
 .photos .col {
   display: flex;
   flex-direction: column;
@@ -247,6 +331,12 @@ i{
 
 .photos .col:last-child {
   padding-top: 40px;
+}
+@media (max-width: 920px) {
+  .photos .col:first-child,
+  .photos .col:last-child {
+    display: none;
+  }
 }
 .photos .text {
   margin-top: 10%;
@@ -310,6 +400,11 @@ i{
   background-color: #fff;
   margin-bottom: 50px;
 }
+@media (max-width: 850px) {
+  .contact .form {
+    width: auto;
+  }
+}
 .contact input {
   flex: 1;
   outline: none;
@@ -340,6 +435,11 @@ i{
   position: absolute;
   right: 50px;
   top: 50px;
+}
+@media (max-width: 850px) {
+  .contact .shapes {
+    display: none;
+  }
 }
 .contact .shapes .quarter {
   width: 50px;
@@ -392,6 +492,13 @@ i{
   left: 35%;
   top: 40px;
 }
+@media (max-width: 767px) {
+  .speakers .arrow {
+    left: auto;
+    right: 50px;
+  }
+}
+
 .speakers .no-speakers {
   background-color: #f6f7fe;
   padding: 5px;
@@ -401,6 +508,12 @@ i{
   left: 40%;
   top: 25px;
   transform: rotate(30deg);
+}
+@media (max-width: 767px) {
+  .speakers .no-speakers {
+    left: auto;
+    right: 0px;
+  }
 }
 .speakers .speaker {
   margin: 20px 10px 0 10px;
@@ -432,6 +545,11 @@ i{
   display: flex;
   overflow: hidden;
 }
+@media (max-width:767px) {
+  .register{
+    flex-direction: column;
+  }
+}
 .register .person {
   width: 50%;
   padding: 60px 50px 60px 50px;
@@ -442,6 +560,12 @@ i{
 }
 .register .person:last-child {
   background-image: url(./assets/re-speaker.jpg);
+}
+@media (max-width:767px) {
+  .register .person{
+   width: 100%;
+   margin: 10px 0;
+  }
 }
 .register .person:hover {
   padding: 30px 50px 50px 50px;
@@ -500,6 +624,12 @@ i{
   padding: 30px 50px;
   justify-content: space-between;
 }
+@media (max-width:767px) {
+  .footer{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 .footer .info h4 {
   color: #fff;
   font-size: 40px;
@@ -525,6 +655,14 @@ i{
   display: flex;
   gap: 50px;
 }
+@media (max-width:767px) {
+  .footer .links{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
 .footer .links h6 {
   color: #fff;
   font-size: 20px;
@@ -533,7 +671,7 @@ i{
   margin: 10px 0;
 }
 .footer .links ul {
- padding: 0;
+  padding: 0;
 }
 .footer .links a {
   color: #c3c4c6;
@@ -553,19 +691,19 @@ i{
   background: rgba(255, 255, 255, 0.2);
   position: relative;
 }
-.footer .links .subscribe input{
-    background: none;
-    border: none;
-    outline: none;
+.footer .links .subscribe input {
+  background: none;
+  border: none;
+  outline: none;
 }
-.footer .links .subscribe input:placeholder{
-    background: rgba(255, 255, 255, 0.5);
+.footer .links .subscribe input:placeholder {
+  background: rgba(255, 255, 255, 0.5);
 }
-.footer .links .subscribe svg{
-    position: absolute;
-    right: 5px ;
-    top: 5px;
-    cursor: pointer;
+.footer .links .subscribe svg {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
 }
 
 /* --------------- key frames ------------------*/
