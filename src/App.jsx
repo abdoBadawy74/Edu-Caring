@@ -1,17 +1,34 @@
 import LandingPage from "./components/LandingPage";
 import Login from "./components/Website/Login";
+import Home from "./components/Website/home/Home.jsx";
 import Reg_Attendace from "./components/Website/register-attendance/Reg_Attendace";
-import Reg_speaker from "./components/Website/register-speaker/Reg_speaker.jsx"
+import Reg_speaker from "./components/Website/register-speaker/Reg_speaker.jsx";
 import Verfication from "./components/Website/verfiy-number/Verfication.jsx";
+import SideBar from "./components/Website/SideBar/SideBar";
+import { Route, Routes } from "react-router-dom";
+import Community from "./components/Website/community/Community.jsx";
+import Profile from "./components/Website/Profile/Profile.jsx";
+import MyEvents from "./components/Website/myEvents/MyEvents";
+import NotFoundPage from "./components/Website/Notfound/NotFoundPage.jsx";
 
 function App() {
   return (
     <>
-      <LandingPage></LandingPage>
+      {/* <LandingPage></LandingPage> */}
       {/* <Login></Login> */}
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
       {/* <Verfication></Verfication> */}
+      {/* <SideBar>
+        <Routes>
+          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="home" element={<Home></Home>}></Route>
+          <Route path="community" element={<Community></Community>}></Route>
+          <Route path="profile" element={<Profile></Profile>}></Route>
+          <Route path="myevents" element={<MyEvents></MyEvents>}></Route>
+          <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
+        </Routes>
+      </SideBar> */}
     </>
   );
 }

@@ -25,7 +25,7 @@ export default function Reg_Attendace() {
           </div>
         </div>
         <div className={style.form}>
-          <div className={style.row}>
+
             <div className={style.input}>
               <i className="fa-regular fa-user"></i>
               <input type="text" placeholder="الإسم (باللغة العربية)" />
@@ -40,9 +40,9 @@ export default function Reg_Attendace() {
               <i className="fa-regular fa-envelope"></i>
               <input type="text" placeholder="email" />
             </div>
-          </div>
 
-          <div className={style.row}>
+
+          
             <div className={style.tele}>
               <img src={flag} alt="flag" />
               <input type="tel" value="+966" readOnly className={style.num} />
@@ -89,9 +89,9 @@ export default function Reg_Attendace() {
                 </select>
               </div>
             </div>
-          </div>
+          
 
-          <div className={style.row}>
+          
             <div className={style.input}>
               <i className="fa-solid fa-heart-pulse"></i>
               <input type="text" placeholder="health authority number" />
@@ -117,9 +117,9 @@ export default function Reg_Attendace() {
                 <option value="alex">alex</option>
               </select>
             </div>
-          </div>
+          
 
-          <div className={style.row}>
+          
             <div className={style.input}>
               <i className="fa-solid fa-lock"></i>
               <input type="password" placeholder="password" />
@@ -130,7 +130,7 @@ export default function Reg_Attendace() {
               <input type="password" placeholder="confirm password" />
               <i className="fa-regular fa-eye-slash fa-flip-horizontal"></i>
             </div>
-          </div>
+          
         <button>Sign Up</button>
         </div>
         <span>
