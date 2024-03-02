@@ -10,6 +10,7 @@ import Community from "./components/Website/community/Community.jsx";
 import Profile from "./components/Website/Profile/Profile.jsx";
 import MyEvents from "./components/Website/myEvents/MyEvents";
 import NotFoundPage from "./components/Website/Notfound/NotFoundPage.jsx";
+import TopBar from './components/Website/topBar/TopBar';
 
 function App() {
   return (
@@ -19,7 +20,12 @@ function App() {
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
       {/* <Verfication></Verfication> */}
-      {/* <SideBar>
+      <div className="d-flex">
+        <div className="col-auto">
+          <SideBar></SideBar>
+        </div>
+        <div className="flex-grow-1">
+          <TopBar></TopBar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route path="home" element={<Home></Home>}></Route>
@@ -28,7 +34,8 @@ function App() {
           <Route path="myevents" element={<MyEvents></MyEvents>}></Route>
           <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
         </Routes>
-      </SideBar> */}
+        </div>
+      </div>
     </>
   );
 }
