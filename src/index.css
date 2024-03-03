@@ -789,6 +789,7 @@ i {
   top: -100px;
   left: -100px;
   transition: 0.5s;
+  z-index: 4444;
 }
 .choice {
   display: flex;
@@ -833,6 +834,7 @@ i {
   right: -100%;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 22;
 }
 .support-popup .head {
   display: flex;
@@ -949,6 +951,7 @@ i {
   top: 40px;
   right: 20px;
   transition: 0.3s;
+  z-index: 333;
 }
 .notification .notif-popup::-webkit-scrollbar {
   display: none;
