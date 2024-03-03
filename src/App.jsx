@@ -17,10 +17,10 @@ function App() {
   return (
     <>
       {/* <LandingPage></LandingPage> */}
-      <Login></Login>
+      {/* <Login></Login> */}
       {/* <Role></Role> */}
       {/* <Reg_Attendace></Reg_Attendace> */}
-      {/* <Reg_speaker></Reg_speaker> */}
+      <Reg_speaker></Reg_speaker>
       {/* <Verfication></Verfication> */}
 
       {/* <div className="d-flex min-vh-100">
