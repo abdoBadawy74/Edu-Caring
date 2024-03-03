@@ -11,16 +11,19 @@ import Profile from "./components/Website/Profile/Profile.jsx";
 import MyEvents from "./components/Website/myEvents/MyEvents";
 import NotFoundPage from "./components/Website/Notfound/NotFoundPage.jsx";
 import TopBar from './components/Website/topBar/TopBar';
+import Role from "./components/Website/Popups/Role.jsx";
 
 function App() {
   return (
     <>
       {/* <LandingPage></LandingPage> */}
-      {/* <Login></Login> */}
+      <Login></Login>
+      {/* <Role></Role> */}
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
       {/* <Verfication></Verfication> */}
-      <div className="d-flex min-vh-100">
+
+      {/* <div className="d-flex min-vh-100">
         <div className="col-auto">
           <SideBar></SideBar>
         </div>
@@ -35,7 +38,7 @@ function App() {
           <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
         </Routes>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
