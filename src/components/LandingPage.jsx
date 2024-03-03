@@ -12,16 +12,18 @@ import Footer from "./LandingPage/Footer";
 export default function LandingPage() {
   return (
     <>
-      <NavBar></NavBar>
-      <Landing></Landing>
-      <Social></Social>
-      <Period></Period>
-      <About></About>
-      <Photos></Photos>
-      <Contacts></Contacts>
-      <Speakers></Speakers>
-      <Register></Register>
-      <Footer></Footer>
-      </>
+      <div className="landig-page">
+        <NavBar></NavBar>
+        <Landing></Landing>
+        <Social></Social>
+        <Period></Period>
+        <About></About>
+        <Photos></Photos>
+        <Contacts></Contacts>
+        <Speakers></Speakers>
+        <Register></Register>
+        <Footer></Footer>
+      </div>
+    </>
   );
 }

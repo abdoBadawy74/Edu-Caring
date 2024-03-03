@@ -20,7 +20,7 @@ function App() {
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
       {/* <Verfication></Verfication> */}
-      <div className="d-flex">
+      <div className="d-flex min-vh-100">
         <div className="col-auto">
           <SideBar></SideBar>
         </div>

@@ -1,6 +1,4 @@
-import React from "react";
-import ar from "../../../assets/sudia-arabia-flag.png";
-import en from "../../../assets/united-state-flag.png";
+import React from "react"
 import Language from "./Language";
 import Support from "./Support";
 import Notification from "./Notification";
