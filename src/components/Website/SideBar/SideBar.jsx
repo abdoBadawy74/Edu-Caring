@@ -15,28 +15,28 @@ function SideBar() {
 
   return (
     <>
-      <div className="d-flex flex-column justify-content-between p-4 h-100 sideBar">
+      <div className="d-flex flex-column justify-content-between p-1 p-xl-4  h-100 sideBar">
         <Link
           to="home"
           className="d-flex align-items-center"
           onClick={() => handleSetActiveLink("home")}
         >
-          <img src={logo} alt="logo" width={"200px"} />
+          <img src={logo} alt="logo" className="mw-100 h-auto" />
         </Link>
         <hr className="opacity-0" />
         <ul className="nav nav-pills flex-column mb-auto">
           <li className={`nav-item my-2 ${activeLink === "home" && "active"}`}>
             <Link
               to="home"
-              className="nav-link px-4"
+              className="nav-link px-lg-4 text-sm-center d-flex  p-sm"
               onClick={() => handleSetActiveLink("home")}
               style={{
                 background: activeLink === "home" && "#3296D4",
                 color: activeLink === "home" && "#fff",
               }}
             >
-              <i className="bi bi-house-door me-2 fs-5"></i>
-              <span className="fs-5 ">Home</span>
+              <i className="bi bi-house-door me-lg-2 fs-5"></i>
+              <span className="fs-5 d-none d-md-inline">Home</span>
             </Link>
           </li>
           <li
@@ -44,15 +44,15 @@ function SideBar() {
           >
             <Link
               to="myevents"
-              className="nav-link px-4"
+              className="nav-link px-lg-4 text-sm-center d-flex "
               onClick={() => handleSetActiveLink("myevents")}
               style={{
                 background: activeLink === "myevents" && "#3296D4",
                 color: activeLink === "myevents" && "#fff",
               }}
             >
-              <i className="bi bi-ticket-perforated me-2 fs-5"></i>
-              <span className="fs-5 ">My Events</span>
+              <i className="bi bi-ticket-perforated me-lg-2 fs-5"></i>
+              <span className="fs-5 d-none d-md-inline">My Events</span>
             </Link>
           </li>
           <li
@@ -62,15 +62,15 @@ function SideBar() {
           >
             <Link
               to="community"
-              className="nav-link px-4"
+              className="nav-link px-lg-4 text-sm-center d-flex "
               onClick={() => handleSetActiveLink("community")}
               style={{
                 background: activeLink === "community" && "#3296D4",
                 color: activeLink === "community" && "#fff",
               }}
             >
-              <i className="bi bi-chat-square-text me-2 fs-5"></i>
-              <span className="fs-5 ">Community</span>
+              <i className="bi bi-chat-square-text me-lg-2 fs-5"></i>
+              <span className="fs-5 d-none d-md-inline">Community</span>
             </Link>
           </li>
           <li
@@ -78,21 +78,21 @@ function SideBar() {
           >
             <Link
               to="profile"
-              className="nav-link px-4"
+              className="nav-link px-lg-4 text-sm-center d-flex "
               onClick={() => handleSetActiveLink("profile")}
               style={{
                 background: activeLink === "profile" && "#3296D4",
                 color: activeLink === "profile" && "#fff",
               }}
             >
-              <i className="bi bi-person me-2 fs-5"></i>
-              <span className="fs-5 ">Profile</span>
+              <i className="bi bi-person me-lg-2 fs-5"></i>
+              <span className="fs-5 d-none d-md-inline">Profile</span>
             </Link>
           </li>
         </ul>
-        <div className="text-danger px-4">
-          <i className="fa-solid fa-arrow-right-from-bracket me-2 fs-5 "></i>
-          <span className="fs-5 ">log out</span>
+        <div className="text-danger px-lg-4 text-sm-center d-flex ">
+          <i className="fa-solid fa-arrow-right-from-bracket me-lg-2 fs-5 "></i>
+          <span className="fs-5 d-none d-md-inline text-cennter">log out</span>
         </div>
       </div>
     </>
