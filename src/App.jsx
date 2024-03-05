@@ -29,14 +29,14 @@ function App() {
         </div>
         <div className="flex-grow-1">
           <TopBar></TopBar>
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<Home></Home>}></Route>
             <Route path="home" element={<Home></Home>}></Route>
             <Route path="community" element={<Community></Community>}></Route>
             <Route path="profile" element={<Profile></Profile>}></Route>
             <Route path="myevents" element={<MyEvents></MyEvents>}></Route>
             <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
-          </Routes>
+          </Routes> */}
         </div>
       </div>
     </>
