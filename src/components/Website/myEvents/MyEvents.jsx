@@ -65,7 +65,7 @@ export default function MyEvents() {
           currency: "SAR",
         },
       ]);
-    }, 1000); // حركة دي يا طه خد بالك 
+    }, 1000); // حركة دي يا طه خد بالك
   }, []);
 
   return (
