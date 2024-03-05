@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Cairo", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 ul {
   list-style: none;
@@ -23,7 +23,7 @@ i {
 .landig-page {
   overflow: hidden;
 }
-/* NavBar.css */
+/*  start NavBar */
 .navbar-toggler {
   border: none;
   outline: none;
@@ -31,9 +31,6 @@ i {
 
 .navbar-toggler:focus {
   outline: none;
-}
-
-.navbar-collapse {
 }
 @media (max-width: 992px) {
   .navbar-collapse {
@@ -65,17 +62,7 @@ i {
   padding: 10px 0;
 }
 
-/* Style for the "X" icon */
-.bi-x {
-  font-size: 1.5rem;
-}
-
-/* Style for the close button */
-.close {
-  background-color: transparent;
-  padding: 0;
-}
-
+/*  End NavBar */
 /* ////////////////////////////////// */
 
 .home {
@@ -823,6 +810,19 @@ i {
 /* start of top bar */
 .topbar {
   height: 65px;
+  /* position: relative; */
+}
+@media (max-width: 767px) {
+  .topbar .icons {
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    overflow: hidden; 
+    right: 15px;
+    padding: 10px;
+    background: #f1f2f2;
+    border-radius: 10px;
+  }
 }
 
 /********** start language  *****************/
