@@ -46,7 +46,7 @@ export default function TopBar() {
           onClick={toggleIconsVisibility}
         ></i>
         <div
-          className={`icons d-flex align-items-center gap-4 d-none ${
+          className={`icons d-flex align-items-center gap-4 ${
             iconsVisible ? "d-md-flex" : "d-sm-none"
           }`}
         >

@@ -850,6 +850,7 @@ i {
   left: -100px;
   transition: 0.5s;
   z-index: 4444;
+  border-radius: 5px;
 }
 .choice {
   display: flex;
