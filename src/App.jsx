@@ -16,18 +16,18 @@ import Role from "./components/Website/Popups/Role.jsx";
 function App() {
   return (
     <>
-      {/* <LandingPage></LandingPage> */}
+      <LandingPage></LandingPage>
       {/* <Login></Login> */}
       {/* <Role></Role> */}
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
       {/* <Verfication></Verfication> */}
 
-      <div className="d-flex min-vh-100">
+      {/* <div className="d-flex min-vh-100">
         <div className="col-2">
           <SideBar></SideBar>
         </div>
-        {/* <div className="flex-grow-1">
+        <div className="flex-grow-1">
           <TopBar></TopBar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
@@ -37,8 +37,8 @@ function App() {
           <Route path="myevents" element={<MyEvents></MyEvents>}></Route>
           <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
         </Routes>
-        </div> */}
-      </div>
+        </div>
+      </div> */}
     </>
   );
 }
