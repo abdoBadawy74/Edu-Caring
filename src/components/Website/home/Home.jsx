@@ -22,6 +22,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         <div className="coming-events">
           <h3>Upcoming Events</h3>
           <div className="events">
@@ -78,6 +79,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
         <div className="recommend">
           <h4>Recommendations for you</h4>
           <div className="events d-flex gap-4">

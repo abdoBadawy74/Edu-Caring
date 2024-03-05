@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 export default function TopBar() {
   const location = useLocation();
   const [routeText, setRouteText] = useState("Home");
-  const [iconsVisible, setIconsVisible] = useState(false);
+  const [iconsVisible, setIconsVisible] = useState(true);
 
   // Use the useEffect hook to change the text when the route changes
   useEffect(() => {
@@ -41,13 +41,13 @@ export default function TopBar() {
         <span>{routeText}</span>
 
         <i
-          className="fa-solid fa-caret-down d-md-none p-4 fs-4 arrow"
+          className="fa-solid fa-caret-down p-4 fs-4 d-md-none"
           role="button"
           onClick={toggleIconsVisibility}
         ></i>
         <div
-          className={`icons  align-items-center gap-4 ${
-            iconsVisible ? "d-flex" : "d-sm-none"
+          className={`icons d-flex align-items-center gap-4 d-none ${
+            iconsVisible ? "d-md-flex" : "d-sm-none"
           }`}
         >
           <Language />

@@ -810,18 +810,18 @@ i {
 /* start of top bar */
 .topbar {
   height: 65px;
-  /* position: relative; */
 }
 @media (max-width: 767px) {
   .topbar .icons {
     position: absolute;
     top: 50px;
     flex-direction: column;
-    overflow: hidden; 
+    overflow: hidden;
     right: 15px;
     padding: 10px;
-    background: #f1f2f2;
+    background: #f9f9f9;
     border-radius: 10px;
+    z-index: 3333;
   }
 }
 
@@ -844,6 +844,7 @@ i {
 }
 .chosLang {
   width: 100px;
+  background-color: #f2f2f2;
   position: absolute;
   top: -100px;
   left: -100px;
@@ -1123,9 +1124,14 @@ i {
 
 /* Start Home Component */
 .home-comp .period {
-  height: 140px;
+  height: 10%;
   padding: 20px;
   background-color: #3296d41a;
+}
+@media (max-width: 992px) {
+  .home-comp .period {
+    text-align: center;
+  }
 }
 .home-comp .statement {
   font-size: 20px;
@@ -1139,6 +1145,12 @@ i {
   width: 240px;
   font-size: 24px;
   color: #3296d4;
+}
+@media (max-width: 992px) {
+  .home-comp .content .nums,
+  .home-comp .content .text {
+    margin: 10px auto;
+  }
 }
 .home-comp .content .text {
   padding: 0 10px;
@@ -1158,9 +1170,21 @@ i {
 .home-comp .coming-events {
   padding: 10px;
 }
+@media (max-width: 992px) {
+  .home-comp .coming-events {
+    text-align: center;
+    margin: 10px;
+  }
+}
 .home-comp .coming-events .events {
   display: flex;
   gap: 20px;
+}
+@media (max-width: 992px) {
+  .home-comp .coming-events .events {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home-comp .coming-events h3 {
   color: #565656;
@@ -1178,6 +1202,12 @@ i {
   align-items: end;
   padding-bottom: 10px;
   overflow: hidden;
+}
+@media (max-width: 500px) {
+  .home-comp .coming-events .event {
+    width: 400px;
+    height: 200px;
+  }
 }
 .home-comp .coming-events .event img {
   position: absolute;
@@ -1225,10 +1255,21 @@ i {
 .home-comp .recommend {
   padding: 10px;
 }
+@media (max-width: 992px) {
+  .home-comp .recommend {
+    text-align: center;
+  }
+}
 .home-comp .recommend h4 {
   color: #565656;
   font-size: 24px;
   margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .home-comp .recommend .events {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .home-comp .recommend .event {
   display: block;
