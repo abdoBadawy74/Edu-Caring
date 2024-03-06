@@ -1531,7 +1531,7 @@ i {
 .commuinty .chats .finished {
   opacity: 0.5;
 }
-.commuinty .chat-item .text{
+.commuinty .chat-item .text {
   padding-right: 30px;
 }
 .commuinty .chat-item h6 {
@@ -1581,7 +1581,7 @@ i {
   width: fit-content;
   max-width: 65%;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .commuinty .chat-content .message {
     max-width: 90%;
   }
@@ -1628,6 +1628,34 @@ i {
   color: #3296d4;
 }
 /***************** End Community Component *************************/
+
+/***************** start Profile Component *************************/
+
+.info-item {
+  transition: all 0.3s ease;
+}
+.info-item input {
+  background: none;
+}
+.info-item.edit-mode {
+  background-color: #f9f9f9;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .profile {
+    width: 100% !important;
+  }
+  .profile .head img {
+    width: 60px;
+    height: 60px;
+  }
+  .profile .head label i {
+    right: -5px !important;
+    bottom: -5px !important;
+  }
+}
+
+/***************** End Profile Component *************************/
 
 /************** Start PopUps **************/
 
