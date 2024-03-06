@@ -123,7 +123,7 @@ export default function Profile() {
           <p style={{ color: "#747688" }}>sherif@educaring.com</p>
         </div>
         <div
-          className="edit px-3 py-2 text-white rounded"
+          className="edit px-3 py-2 text-white rounded d-flex align-items-center"
           style={{ background: "#27AE60", cursor: "pointer" }}
           onClick={isEditMode ? handleSaveClick : handleEditClick}
         >
