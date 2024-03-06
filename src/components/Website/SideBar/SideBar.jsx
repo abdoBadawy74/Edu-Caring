@@ -28,7 +28,7 @@ function SideBar() {
           <li className={`nav-item my-2 ${activeLink === "home" && "active"}`}>
             <Link
               to="home"
-              className="nav-link px-lg-4 text-sm-center d-flex  p-sm"
+              className="nav-link px-lg-4 text-sm-center d-md-flex  p-sm"
               onClick={() => handleSetActiveLink("home")}
               style={{
                 background: activeLink === "home" && "#3296D4",
@@ -44,7 +44,7 @@ function SideBar() {
           >
             <Link
               to="myevents"
-              className="nav-link px-lg-4 text-sm-center d-flex "
+              className="nav-link px-lg-4 text-sm-center d-md-flex "
               onClick={() => handleSetActiveLink("myevents")}
               style={{
                 background: activeLink === "myevents" && "#3296D4",
@@ -62,7 +62,7 @@ function SideBar() {
           >
             <Link
               to="community"
-              className="nav-link px-lg-4 text-sm-center d-flex "
+              className="nav-link px-lg-4 text-sm-center d-md-flex "
               onClick={() => handleSetActiveLink("community")}
               style={{
                 background: activeLink === "community" && "#3296D4",
@@ -78,7 +78,7 @@ function SideBar() {
           >
             <Link
               to="profile"
-              className="nav-link px-lg-4 text-sm-center d-flex "
+              className="nav-link px-lg-4 text-sm-center d-md-flex "
               onClick={() => handleSetActiveLink("profile")}
               style={{
                 background: activeLink === "profile" && "#3296D4",
