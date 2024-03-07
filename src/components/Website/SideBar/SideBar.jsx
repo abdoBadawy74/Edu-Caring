@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../../assets/logo-removebg-preview.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 function SideBar() {
@@ -95,6 +95,7 @@ function SideBar() {
           <span className="fs-5 d-none d-md-inline text-cennter">log out</span>
         </div>
       </div>
+      <Outlet></Outlet>
     </>
   );
 }

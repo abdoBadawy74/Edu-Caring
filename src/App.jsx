@@ -12,6 +12,7 @@ import MyEvents from "./components/Website/myEvents/MyEvents";
 import NotFoundPage from "./components/Website/Notfound/NotFoundPage.jsx";
 import TopBar from "./components/Website/topBar/TopBar";
 import Role from "./components/Website/Popups/Role.jsx";
+import Event from "./components/Website/Event/Event.jsx";
 
 function App() {
   return (
@@ -31,10 +32,12 @@ function App() {
           <TopBar></TopBar>
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>
+            <Route path="event" element={<Event></Event>}></Route>
             <Route path="home" element={<Home></Home>}></Route>
             <Route path="community" element={<Community></Community>}></Route>
             <Route path="profile" element={<Profile></Profile>}></Route>
             <Route path="myevents" element={<MyEvents></MyEvents>}></Route>
+
             <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
           </Routes>
         </div>

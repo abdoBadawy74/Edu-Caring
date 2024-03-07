@@ -1,7 +1,8 @@
 import eventImg1 from "../../../assets/event-img1.jpeg";
 import eventImg2 from "../../../assets/event-img2.jpeg";
 import eventImg3 from "../../../assets/event-img3.jpeg";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
+
 export default function Home() {
   return (
     <>
@@ -26,7 +27,7 @@ export default function Home() {
         <div className="coming-events">
           <h3>Upcoming Events</h3>
           <div className="events">
-            <Link className="event">
+            <Link className="event" to="/event">
               <img src={eventImg1} alt="event-Img" />
 
               <div className="content">
@@ -52,7 +53,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link className="event">
+            <Link className="event" to="/event">
               <img src={eventImg2} alt="event-Img" />
 
               <div className="content">
@@ -83,7 +84,7 @@ export default function Home() {
         <div className="recommend">
           <h4>Recommendations for you</h4>
           <div className="events d-flex gap-4">
-            <Link className="event">
+            <Link className="event" to="/event">
               <img src={eventImg3} alt="eventImg" />
               <div className="info">
                 <h6>Problem Solving tricks</h6>
@@ -106,7 +107,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link className="event">
+            <Link className="event" to="/event">
               <img src={eventImg3} alt="eventImg" />
               <div className="info">
                 <h6>Problem Solving tricks</h6>

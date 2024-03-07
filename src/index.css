@@ -1657,6 +1657,19 @@ i {
 
 /***************** End Profile Component *************************/
 
+/***************** Starr Event Component *************************/
+@media (max-width: 757px) {
+  .event-comp .coursel img {
+    height: 50vh !important;
+  }
+}
+@media (max-width: 400px) {
+  .event-comp .coursel img {
+    height: 40vh !important;
+  }
+}
+/***************** End Event Component *************************/
+
 /************** Start PopUps **************/
 
 /* Start Role */
