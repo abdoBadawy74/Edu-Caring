@@ -1,4 +1,4 @@
-import LandingPage from "./components/LandingPage";
+import LandingPage from "./components/Website/LandingPage/LandingPage.jsx";
 import Login from "./components/Website/Login";
 import Home from "./components/Website/home/Home.jsx";
 import Reg_Attendace from "./components/Website/register-attendance/Reg_Attendace";
@@ -17,14 +17,14 @@ import Payment from "./components/Website/payment/Payment.jsx";
 function App() {
   return (
     <>
-      {/* <LandingPage></LandingPage> */}
+      <LandingPage></LandingPage>
       {/* <Login></Login> */}
       {/* <Role></Role> */}
       {/* <Reg_Attendace></Reg_Attendace> */}
       {/* <Reg_speaker></Reg_speaker> */}
       {/* <Verfication></Verfication> */}
 
-      <div className="d-flex min-vh-100">
+      {/* <div className="d-flex min-vh-100">
         <div className="col-2">
           <SideBar></SideBar>
         </div>
@@ -41,7 +41,7 @@ function App() {
             <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
           </Routes>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
