@@ -83,7 +83,7 @@ export default function Event() {
                 </svg>
               </div>
               <Link
-                to="payment"
+                to="/payment"
                 className="p-1 border text-white text-center"
                 style={{
                   background: "#3296D4",
@@ -206,7 +206,7 @@ export default function Event() {
             style={{ backgroundColor: "#F5F7FB", height: "50%" }}
           >
             <h5>Speakers</h5>
-            <div className="d-flex flex-wrap gap-3 ">
+            <div className="d-flex flex-wrap gap-3 justify-content-center">
               <div>
                 <img
                   src={speakerImg1}

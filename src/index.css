@@ -1668,6 +1668,14 @@ i {
     height: 40vh !important;
   }
 }
+@media (max-width: 992px) {
+  .event-comp .event-info {
+    flex-direction: column;
+  }
+  .event-comp .event-info .speakers {
+    text-align: center;
+  }
+}
 /***************** End Event Component *************************/
 
 /************** Start PopUps **************/
