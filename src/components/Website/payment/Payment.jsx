@@ -3,7 +3,7 @@ import React from "react";
 export default function Payment() {
   return (
     <div>
-      <svg
+      {/* <svg
         width="39"
         height="24"
         viewBox="0 0 39 24"
@@ -135,7 +135,10 @@ export default function Payment() {
           />
         </g>
       </svg>
-      
+       */}
+       <div className="payment row ">
+
+       </div>
     </div>
   );
 }
