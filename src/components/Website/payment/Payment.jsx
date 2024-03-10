@@ -339,7 +339,7 @@ export default function Payment() {
             <Link
               className="d-block text-center w-100 mt-5 p-3  text-white"
               style={{ backgroundColor: "#3296D4", borderRadius: "12px" }}
-              to="ticket"
+              to="/ticket"
             >
               Continue
             </Link>
