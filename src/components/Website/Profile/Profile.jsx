@@ -21,7 +21,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="profile p-4 w-75 w-75">
+    <div className="profile p-4 w-75">
       <div
         className="head d-flex gap-3 align-items-center pb-3"
         style={{ borderBottom: "1px solid #DCDCDC" }}
@@ -78,7 +78,7 @@ export default function Profile() {
           {isEditMode ? (
             <input
               type="text"
-              className="border-0 mb-1 fs-5"
+              className="border-0 mb-1"
               style={{ outline: "0" }}
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -101,7 +101,7 @@ export default function Profile() {
           {isEditMode ? (
             <input
               type="text"
-              className="border-0 mb-1 fs-5"
+              className="border-0 mb-1"
               style={{ outline: "0" }}
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
@@ -116,7 +116,7 @@ export default function Profile() {
           </span>
         </div>
 
-        <div className="d-flex border rounded p-3 py-2 justify-content-between gap-3">
+        <div className="d-flex border rounded p-3 py-2 justify-content-between gap-3 overflow-hidden">
           <div
             className={`info-item p-2 d-flex flex-column ${
               isEditMode ? "edit-mode" : ""
@@ -126,7 +126,7 @@ export default function Profile() {
             {isEditMode ? (
               <input
                 type="text"
-                className="border-0 mb-1 fs-5"
+                className="border-0 mb-1"
                 style={{ outline: "0" }}
                 value={dateOfBirth}
                 onChange={(e) => setDateOfBirth(e.target.value)}
@@ -151,7 +151,7 @@ export default function Profile() {
             {isEditMode ? (
               <input
                 type="text"
-                className="border-0 mb-1 fs-5"
+                className="border-0 mb-1"
                 style={{ outline: "0" }}
                 value={gender}
                 onChange={(e) => setGender(e.target.value)}
@@ -170,7 +170,7 @@ export default function Profile() {
           </div>
         </div>
 
-        <div className="d-flex border rounded p-3 py-2 justify-content-between gap-3">
+        <div className="d-flex border rounded p-3 py-2 justify-content-between gap-3 overflow-hidden">
           <div
             className={`info-item p-2 d-flex flex-column ${
               isEditMode ? "edit-mode" : ""
@@ -180,7 +180,7 @@ export default function Profile() {
             {isEditMode ? (
               <input
                 type="text"
-                className="border-0 mb-1 fs-5"
+                className="border-0 mb-1"
                 style={{ outline: "0" }}
                 value={country}
                 onChange={(e) => setCountry(e.target.value)}
@@ -205,7 +205,7 @@ export default function Profile() {
             {isEditMode ? (
               <input
                 type="text"
-                className="border-0 mb-1 fs-5"
+                className="border-0 mb-1"
                 style={{ outline: "0" }}
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
@@ -232,7 +232,7 @@ export default function Profile() {
           {isEditMode ? (
             <input
               type="text"
-              className="border-0 mb-1 fs-5"
+              className="border-0 mb-1"
               style={{ outline: "0" }}
               value={healthAuthorityNumber}
               onChange={(e) => setHealthAuthorityNumber(e.target.value)}
@@ -247,7 +247,7 @@ export default function Profile() {
           </span>
         </div>
 
-        <div className="d-flex border rounded p-3 py-2 justify-content-between gap-3">
+        <div className="d-flex border rounded p-3 py-2 justify-content-between gap-3 overflow-hidden">
           <div
             className={`info-item p-2 d-flex flex-column flex-grow-1 ${
               isEditMode ? "edit-mode" : ""
@@ -257,7 +257,7 @@ export default function Profile() {
             {isEditMode ? (
               <input
                 type="text"
-                className="border-0 mb-1 fs-5"
+                className="border-0 mb-1"
                 style={{ outline: "0" }}
                 value={specialist}
                 onChange={(e) => setSpecialist(e.target.value)}
@@ -281,7 +281,7 @@ export default function Profile() {
           >
             <input
               type="text"
-              className="border-0 mb-1 fs-5"
+              className="border-0 mb-1"
               style={{ outline: "0" }}
               value={"----"}
               readOnly

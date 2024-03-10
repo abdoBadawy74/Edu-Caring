@@ -28,7 +28,7 @@ function App() {
         <div className="col-2">
           <SideBar></SideBar>
         </div>
-        <div className="flex-grow-1">
+        <div className="flex-grow-1 overflow-hidden">
           <TopBar></TopBar>
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>

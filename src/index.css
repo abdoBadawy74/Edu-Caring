@@ -19,7 +19,6 @@ i {
   font-weight: 900;
 }
 
-
 /* start website  */
 
 /* start sideBar */
@@ -445,7 +444,7 @@ i {
 }
 @media (max-width: 500px) {
   .home-comp .coming-events .event {
-    width: 400px;
+    width: 330px;
     height: 200px;
   }
 }
@@ -878,7 +877,6 @@ i {
 }
 .info-item.edit-mode {
   background-color: #f9f9f9;
-  padding: 10px;
 }
 @media (max-width: 767px) {
   .profile {
@@ -891,6 +889,16 @@ i {
   .profile .head label i {
     right: -5px !important;
     bottom: -5px !important;
+  }
+}
+@media (max-width: 400px) {
+  .profile .head {
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 400px) {
+  .profile .info {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
   }
 }
 
