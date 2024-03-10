@@ -15,6 +15,7 @@ import Role from "./components/Website/Popups/Role.jsx";
 import Event from "./components/Website/Event/Event.jsx";
 import Payment from "./components/Website/payment/Payment.jsx";
 import Ticket from "./components/Website/ticket/Ticket.jsx";
+import SpeakerProfile from "./components/Website/speakerProfile/SpeakerProfile.jsx";
 function App() {
   return (
     <>
@@ -40,6 +41,7 @@ function App() {
             <Route path="myevents" element={<MyEvents></MyEvents>}></Route>
             <Route path="payment" element={<Payment></Payment>}></Route>
             <Route path="ticket" element={<Ticket></Ticket>}></Route>
+            <Route path="speakerProfile" element={<SpeakerProfile></SpeakerProfile>}></Route>
             <Route path="*" element={<NotFoundPage></NotFoundPage>}></Route>
           </Routes>
         </div>

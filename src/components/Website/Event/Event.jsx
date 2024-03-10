@@ -207,7 +207,7 @@ export default function Event() {
           >
             <h5>Speakers</h5>
             <div className="d-flex flex-wrap gap-3 justify-content-center">
-              <div>
+              <Link to="/speakerProfile">
                 <img
                   src={speakerImg1}
                   alt="speakerImg"
@@ -215,9 +215,9 @@ export default function Event() {
                   width={"65px"}
                   height={"65px"}
                 />
-                <p>Mohamed</p>
-              </div>
-              <div>
+                <p className="text-dark">Mohamed</p>
+              </Link>
+              <Link to="/speakerProfile">
                 <img
                   src={speakerImg2}
                   alt="speakerImg"
@@ -225,9 +225,9 @@ export default function Event() {
                   width={"65px"}
                   height={"65px"}
                 />
-                <p>Hossam</p>
-              </div>
-              <div>
+                <p className="text-dark">Hossam</p>
+              </Link>
+              <Link to="/speakerProfile">
                 <img
                   src={speakerImg3}
                   alt="speakerImg"
@@ -235,9 +235,9 @@ export default function Event() {
                   width={"65px"}
                   height={"65px"}
                 />
-                <p>Omar Abd.</p>
-              </div>
-              <div>
+                <p className="text-dark">Omar Abd.</p>
+              </Link>
+              <Link to="/speakerProfile">
                 <img
                   src={speakerImg2}
                   alt="speakerImg"
@@ -245,9 +245,9 @@ export default function Event() {
                   width={"65px"}
                   height={"65px"}
                 />
-                <p>Ragab T.</p>
-              </div>
-              <div>
+                <p className="text-dark">Ragab T.</p>
+              </Link>
+              <Link to="/speakerProfile">
                 <img
                   src={speakerImg1}
                   alt="speakerImg"
@@ -255,8 +255,8 @@ export default function Event() {
                   width={"65px"}
                   height={"65px"}
                 />
-                <p>Mohamed</p>
-              </div>
+                <p className="text-dark">Mohamed</p>
+              </Link>
             </div>
           </div>
         </div>
