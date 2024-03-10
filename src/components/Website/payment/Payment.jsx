@@ -173,7 +173,7 @@ export default function Payment() {
               />
             </div>
 
-            <div className="d-flex justify-content-between my-2 ">
+            <div className="d-flex flex-column flex-md-row justify-content-between my-2 ">
               <div className="d-flex flex-column col-md-6 col-lg-7">
                 <label
                   htmlFor="exDate"
