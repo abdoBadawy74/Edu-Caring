@@ -34,7 +34,7 @@ function App() {
           <TopBar></TopBar>
           <Routes>
             <Route path="/" element={<Home></Home>}></Route>
-            <Route path="event" element={<Event></Event>}></Route>
+            <Route path="/event/:eventId" element={<Event></Event>}></Route>
             <Route path="home" element={<Home></Home>}></Route>
             <Route path="community" element={<Community></Community>}></Route>
             <Route path="profile" element={<Profile></Profile>}></Route>
